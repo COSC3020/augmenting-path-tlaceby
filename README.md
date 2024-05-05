@@ -30,7 +30,7 @@ accordingly.
 
 ## Runtime Analysis
 
-I will use a bfs aproach to solve this. This means the complexity is $\Theta(V + E)$ where $E$ represents edges in the graph and $V$ represents verticies.
+To find the augmented path I use a **Breadth First Search** aproach. This means the complexity is $\Theta(V + E)$ where $E$ represents edges in the graph and $V$ represents verticies. There is no additional complexity which asymtotic-analysis cares about in my implimentation, therefore this is the worst-case complexity.
 
 ## Resources
 

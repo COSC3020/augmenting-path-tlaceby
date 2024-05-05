@@ -1,6 +1,7 @@
 function augmentingPath(graph, start, end) {
   if (start === end) return [start];
   // Check if start and end are actually in the graph
+  // Check no longer needed. Good for redundancy though?
   if (!(start in graph) || !(end in graph)) {
     console.error("The (Start or End) node is not in the graph");
     return [];
@@ -8,9 +9,8 @@ function augmentingPath(graph, start, end) {
 
   let queue = [start];
   let visited = new Set();
-  let prev = { [start]: null }; // dict of key: predecessors
+  let prev = { [start]: null };
 
-  // Berform bfs
   while (queue.length > 0) {
     let current = queue.shift();
     visited.add(current);
