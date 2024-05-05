@@ -30,10 +30,7 @@ accordingly.
 
 ## Runtime Analysis
 
-What is the worst-case big $\Theta$ complexity of your implementation? Add your
-answer, including your reasoning, to this markdown file.
-
-I will use a bfs aproach to solve this. This means the complexity is $\Theta(v + e)$ where $e$ represents edges in the graph and $v$ represents verticies.
+I will use a bfs aproach to solve this. This means the complexity is $\Theta(V + E)$ where $E$ represents edges in the graph and $V$ represents verticies.
 
 ## Resources
 
