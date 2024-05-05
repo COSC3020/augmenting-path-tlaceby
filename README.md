@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/NehM89hy)
+
 # Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
@@ -18,10 +19,8 @@ To illustrate, here's an example graph:
 Here's the call for this graph:
 
 ```javascript
-var graph = {'foo': {'boo': 7},
-             'boo': {'foo': 3, 'bar': 2},
-             'bar': {'boo': 4}};
-augmentingPath(graph, 'foo', 'bar');
+var graph = { foo: { boo: 7 }, boo: { foo: 3, bar: 2 }, bar: { boo: 4 } };
+augmentingPath(graph, "foo", "bar");
 ```
 
 The call would return `['foo', 'boo', 'bar']`.
@@ -33,3 +32,9 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+I will use a bfs aproach to solve this. This means the complexity is $\Theta(v + e)$ where $e$ represents edges in the graph and $v$ represents verticies.
+
+## Resources
+
+https://youtu.be/LdOnanfc5TM?si=mQ1t_c8QrBjfXmM2 was used for learning the concept behind what we are trying to do here with the flow-graph.
